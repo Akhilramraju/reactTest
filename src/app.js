@@ -23,18 +23,21 @@ app.get('/', (req, res) => {
     <!DOCTYPE html>
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+     <h1>React project</h1>
       </head>
       <body>
         <div id="root"></div>
-        <script src="/assets/js/vendor.js"></script>
-        <script src="/assets/js/app.js"></script>
+     
       </body>
     </html>`;
 
   // Respond with the HTML
-  res.send(htmlContent);
+ " res.sendFile(path.join(__dirname,"./index.html"));"
 });
 
 // Export the Express app
 module.exports = app;
+
+//   <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+//   <script src="/assets/js/vendor.js"></script>
+//<script src="/assets/js/app.js"></script>

@@ -18,3 +18,4 @@ else
   # In production mode, run node directly without any debugging.
   node --use_strict src/server.js
 fi
+
