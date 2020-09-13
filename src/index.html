@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     p {
+    font-family: Arial;
+    font-size: 18px;
+    color: Blue;
+    font-weight: Bold;
+  }
+  
+    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <title>
+	WDC Assignment 01
+    </title>
+  
+  </head>
+        <body>
+          <p>
+            Hello world
+            </p><br>
+            <button onclick="callUser()">Show Users</button>
+          <p id="demo"> </p>
+            
+          <br>
+<!-- js-->
+<script>
+var  users = [
+  ["John","john@dev.com","WX"]
+,["amin","a.abken@larobe.edu.au","VIC"],
+["Linda","Linda.Paterson@gmail.com","QLD"]];
+
+
+function returnUsers (users){
+  users.sort();
+  return users;
+}
+function callUser() {
+  document.getElementById("demo").innerHTML = returnUsers(users);
+}
+
+</script>
+
+          
+        
+    </body>
+</html>
